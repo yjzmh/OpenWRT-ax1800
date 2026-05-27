@@ -156,8 +156,9 @@ jobs:
         run: |
           cd ./wrt/package/
 
-          $GITHUB_WORKSPACE/Scripts/Packages.sh
-          $GITHUB_WORKSPACE/Scripts/Handles.sh
+         ls
+         # $GITHUB_WORKSPACE/Scripts/Packages.sh
+         # $GITHUB_WORKSPACE/Scripts/Handles.sh
 
       - name: Custom Settings
         run: |
@@ -166,7 +167,7 @@ jobs:
           if [[ "${WRT_CONFIG,,}" == *"test"* ]]; then
             cat $GITHUB_WORKSPACE/Config/$WRT_CONFIG.txt >> .config
           else
-            cat $GITHUB_WORKSPACE/Config/jdc.config $GITHUB_WORKSPACE/Config/GENERAL.txt >> .config
+            cat $GITHUB_WORKSPACE/Config/libwrt.txt >> .config
           fi
 
           $GITHUB_WORKSPACE/Scripts/Settings.sh
