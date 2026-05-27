@@ -152,13 +152,6 @@ jobs:
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
-      - name: Custom Packages
-        run: |
-          cd ./wrt/package/
-
-          ls
-          #$GITHUB_WORKSPACE/Scripts/Packages.sh
-          #$GITHUB_WORKSPACE/Scripts/Handles.sh
 
       - name: Custom Settings
         run: |
