@@ -156,8 +156,9 @@ jobs:
         run: |
           cd ./wrt/package/
 
-          $GITHUB_WORKSPACE/Scripts/Packages.sh
-          $GITHUB_WORKSPACE/Scripts/Handles.sh
+          ls
+          #$GITHUB_WORKSPACE/Scripts/Packages.sh
+          #$GITHUB_WORKSPACE/Scripts/Handles.sh
 
       - name: Custom Settings
         run: |
