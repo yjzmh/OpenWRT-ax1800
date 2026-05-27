@@ -43,5 +43,6 @@ echo "CONFIG_LUCI_LANG_zh_Hans=y" >> ./.config
 if [ -n "$WRT_PACKAGE" ]; then
 	echo -e "$WRT_PACKAGE" >> ./.config
 fi
-
+#其他调整
+echo "CONFIG_PACKAGE_kmod-usb-serial-qualcomm=y" >> ./.config
 
