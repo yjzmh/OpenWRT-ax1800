@@ -1,5 +1,5 @@
 #插件调整
-CONFIG_PACKAGE_luci-app-dockerman=y
+CONFIG_PACKAGE_luci-app-dockerman=m
 #科学插件调整
 CONFIG_PACKAGE_luci-app-homeproxy=y
 #删除插件
