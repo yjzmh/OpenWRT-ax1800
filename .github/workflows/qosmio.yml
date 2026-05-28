@@ -1,5 +1,5 @@
 
-#CI项目
+#CI项目 测试不通过
 name: qosmio
 #CI计划
 on:
